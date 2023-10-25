@@ -1,36 +1,15 @@
-{% load static %}
+{% extends "global/base.html" %}
 
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipes</title>
-
-    {% include "recipes/partials/head.html" %}
-
-</head>
-
-<body>
-    {% include "recipes/partials/header.html" %}
-    {% include "recipes/partials/search.html" %}
-
-    <main class="main-content-container">
-        <div class="main-content main-content-list container">
-            {% include "recipes/partials/recipe-item.html" %}
-            {% include "recipes/partials/recipe-item.html" %}
-            {% include "recipes/partials/recipe-item.html" %}
-            {% include "recipes/partials/recipe-item.html" %}
-            {% include "recipes/partials/recipe-item.html" %}
-            {% include "recipes/partials/recipe-item.html" %}
-            {% include "recipes/partials/recipe-item.html" %}
-            {% include "recipes/partials/recipe-item.html" %}
-            {% include "recipes/partials/recipe-item.html" %}
-        </div>
-    </main>
-
-    {% include "recipes/partials/footer.html" %}
-</body>
-
-</html>
+{% block content %}
+    <div class="main-content main-content-list container">
+        {% include "recipes/partials/recipe-item.html" %}
+        {% include "recipes/partials/recipe-item.html" %}
+        {% include "recipes/partials/recipe-item.html" %}
+        {% include "recipes/partials/recipe-item.html" %}
+        {% include "recipes/partials/recipe-item.html" %}
+        {% include "recipes/partials/recipe-item.html" %}
+        {% include "recipes/partials/recipe-item.html" %}
+        {% include "recipes/partials/recipe-item.html" %}
+        {% include "recipes/partials/recipe-item.html" %}
+    </div>
+{% endblock content %}

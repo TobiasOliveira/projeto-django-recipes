@@ -11,12 +11,14 @@
 </head>
 
 <body>
-    {% include "recipes/partials/header.html" %}
+    {% include "global/header.html" %}
     {% include "recipes/partials/search.html" %}
 
     <main class="main-content-container">
         {% block content %}{% endblock content %}
     </main>
+
+    {% include "global/footer.html" %}
 
 </body>
 

@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -6,21 +8,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes</title>
 
-    {% include "recipes/partials/header.html" %}
+    {% include "recipes/partials/head.html" %}
 
 </head>
 
 <body>
-    <header class="main-header-container">
-        <div class="main-header container">
-            <h1>
-                <a href="/">
-                    <i class="fas fa-address-book"></i>
-                    <span>Teste</span>
-                </a>
-            </h1>
+    {% include "recipes/partials/header.html" %}
+    {% include "recipes/partials/search.html" %}
+
+    <main class="main-content-container">
+        <div class="main-content main-content-list container">
+            {% include "recipes/partials/recipe-item.html" %}
+            {% include "recipes/partials/recipe-item.html" %}
+            {% include "recipes/partials/recipe-item.html" %}
+            {% include "recipes/partials/recipe-item.html" %}
+            {% include "recipes/partials/recipe-item.html" %}
+            {% include "recipes/partials/recipe-item.html" %}
+            {% include "recipes/partials/recipe-item.html" %}
+            {% include "recipes/partials/recipe-item.html" %}
+            {% include "recipes/partials/recipe-item.html" %}
         </div>
-    </header>
+    </main>
+
+    {% include "recipes/partials/footer.html" %}
 </body>
 
 </html>

@@ -176,7 +176,7 @@ h6 {
 }
 
 .recipe-content {
-    padding: var(--spacing-gutter-medium);
+    padding: 0 var(--spacing-gutter-medium);
     padding-top: 2rem;
 }
 
@@ -260,7 +260,7 @@ h6 {
 }
 
 .preparation-steps {
-    padding: var(--spacing-gutter-medium);
+    padding: 0 var(--spacing-gutter-medium);
 }
 
 .preparation-steps h1,
@@ -271,7 +271,7 @@ h6 {
 .preparation-steps h6,
 .preparation-steps p,
 .preparation-steps pre {
-    margin: 2rem 0;
+    margin: 0 0 2rem 0;
 }
 
 .preparation-steps ol,
@@ -281,4 +281,23 @@ h6 {
 
 .center {
     text-align: center;
+}
+
+.recipe-cover {
+    position: relative;
+    height: 25rem;
+    overflow: hidden;
+}
+
+.recipe-cover img {
+    position: absolute;  
+    left: 50%;  
+    top: 50%;
+    width: auto;
+    transform: translate(-50%, -50%);
+}
+
+.recipe-cover img .portrait {
+    width: 100%;
+    height: auto;
 }
